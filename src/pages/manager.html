@@ -11,24 +11,24 @@
         <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7edf3] px-10 py-3">
           <div class="flex items-center gap-4 text-[#0e141b]">
             <div class="size-4">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path></svg>
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
             </div>
-            <h2 class="text-[#0e141b] text-lg font-bold leading-tight tracking-[-0.015em]">QuizMaster</h2>
+            <h2 class="text-[#0e141b] text-lg font-bold leading-tight tracking-[-0.015em]">QuizTime</h2>
           </div>
           <div class="flex flex-1 justify-end gap-8">
             <div class="flex items-center gap-9">
-              <a class="text-[#0e141b] text-sm font-medium leading-normal" href="#">Home</a>
-              <a class="text-[#0e141b] text-sm font-medium leading-normal" href="#">My Quizzes</a>
-              <a class="text-[#0e141b] text-sm font-medium leading-normal" href="#">Explore</a>
+              <a class="text-[#0e141b] text-sm font-medium leading-normal" href="../index.html">Home</a>
+              <a class="text-[#0e141b] text-sm font-medium leading-normal" href="manager.html">My Quizzes</a>
+              <a class="text-[#0e141b] text-sm font-medium leading-normal" href="quizes.html">Explore</a>
             </div>
-            <button
-              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#1978e5] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]"
-            >
-              <span class="truncate">New Quiz</span>
-            </button>
             <div
               class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
-              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA6ETsqvnpn0cdxxbTf6CayAJrqTjHeB0yyFU7In3tuX-f0ef0XBTGeK73ExEcA0KlpN1CL2KN7zmva0biC0CVhGa7zy9gaW5RT4ijttAKwATGoQm66oMM_iC5GxEloD0t3hlH6DIU7_uBVsQ5pxYUcQD5L6vF-wvLPamoGEXzOiDeQGWFXdmSMbzrXaiYuAJsKLr5gnnw6Ty7fiR9L45i0Kn_ArM15cX2yBwRGNxNFpPH8i2hQt0llvTwEOZ2dbHcUJlfZSBdABFqd");'
+              style='background-image: url(../img/default-avatar-icon-of-social-media-user-vector.jpg)'
             ></div>
           </div>
         </header>
@@ -41,9 +41,7 @@
                   <thead>
                     <tr class="bg-slate-50">
                       <th class="table-a60aacce-b9bd-4103-a1c8-4d1c124f5e18-column-120 px-4 py-3 text-left text-[#0e141b] w-[400px] text-sm font-medium leading-normal">Title</th>
-                      <th class="table-a60aacce-b9bd-4103-a1c8-4d1c124f5e18-column-240 px-4 py-3 text-left text-[#0e141b] w-60 text-[#4e7097] text-sm font-medium leading-normal">
-                        Actions
-                      </th>
+                      <th class="table-a60aacce-b9bd-4103-a1c8-4d1c124f5e18-column-240 px-4 py-3 text-left text-[#0e141b] w-60 text-[#4e7097] text-sm font-medium leading-normal">Actions</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -52,7 +50,12 @@
                         History Quiz
                       </td>
                       <td class="table-a60aacce-b9bd-4103-a1c8-4d1c124f5e18-column-240 h-[72px] px-4 py-2 w-60 text-[#4e7097] text-sm font-bold leading-normal tracking-[0.015em]">
-                        Edit | Delete
+                        <a href="edit.html">Edit</a> | <a href="">Delete</a>
+                      </td>
+                      <td class="table-a60aacce-b9bd-4103-a1c8-4d1c124f5e18-column-240 h-[72px] px-4 py-2 w-60 text-[#4e7097] text-sm font-bold leading-normal tracking-[0.015em]">
+                        <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 flex-1 bg-[#1978e5] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]">
+                          <a class="truncate" href="launch.html">Host</a>
+                        </button>
                       </td>
                     </tr>
                     <tr class="border-t border-t-[#d0dbe7]">
@@ -60,7 +63,12 @@
                         Science Quiz
                       </td>
                       <td class="table-a60aacce-b9bd-4103-a1c8-4d1c124f5e18-column-240 h-[72px] px-4 py-2 w-60 text-[#4e7097] text-sm font-bold leading-normal tracking-[0.015em]">
-                        Edit | Delete
+                        <a href="edit.html">Edit</a> | <a href="">Delete</a>
+                      </td>
+                      <td class="table-a60aacce-b9bd-4103-a1c8-4d1c124f5e18-column-240 h-[72px] px-4 py-2 w-60 text-[#4e7097] text-sm font-bold leading-normal tracking-[0.015em]">
+                        <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 flex-1 bg-[#1978e5] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]">
+                          <a class="truncate" href="launch.html">Host</a>
+                        </button>
                       </td>
                     </tr>
                     <tr class="border-t border-t-[#d0dbe7]">
@@ -68,7 +76,12 @@
                         Math Quiz
                       </td>
                       <td class="table-a60aacce-b9bd-4103-a1c8-4d1c124f5e18-column-240 h-[72px] px-4 py-2 w-60 text-[#4e7097] text-sm font-bold leading-normal tracking-[0.015em]">
-                        Edit | Delete
+                        <a href="edit.html">Edit</a> | <a href="">Delete</a>
+                      </td>
+                      <td class="table-a60aacce-b9bd-4103-a1c8-4d1c124f5e18-column-240 h-[72px] px-4 py-2 w-60 text-[#4e7097] text-sm font-bold leading-normal tracking-[0.015em]">
+                        <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 flex-1 bg-[#1978e5] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]">
+                          <a class="truncate" href="launch.html">Host</a>
+                        </button>
                       </td>
                     </tr>
                     <tr class="border-t border-t-[#d0dbe7]">
@@ -76,7 +89,12 @@
                         Geography Quiz
                       </td>
                       <td class="table-a60aacce-b9bd-4103-a1c8-4d1c124f5e18-column-240 h-[72px] px-4 py-2 w-60 text-[#4e7097] text-sm font-bold leading-normal tracking-[0.015em]">
-                        Edit | Delete
+                        <a href="edit.html">Edit</a> | <a href="">Delete</a>
+                      </td>
+                      <td class="table-a60aacce-b9bd-4103-a1c8-4d1c124f5e18-column-240 h-[72px] px-4 py-2 w-60 text-[#4e7097] text-sm font-bold leading-normal tracking-[0.015em]">
+                        <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 flex-1 bg-[#1978e5] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]">
+                          <a class="truncate" href="launch.html">Host</a>
+                        </button>
                       </td>
                     </tr>
                     <tr class="border-t border-t-[#d0dbe7]">
@@ -84,12 +102,20 @@
                         Literature Quiz
                       </td>
                       <td class="table-a60aacce-b9bd-4103-a1c8-4d1c124f5e18-column-240 h-[72px] px-4 py-2 w-60 text-[#4e7097] text-sm font-bold leading-normal tracking-[0.015em]">
-                        Edit | Delete
+                        <a href="edit.html">Edit</a> | <a href="">Delete</a>
+                      </td>
+                      <td class="table-a60aacce-b9bd-4103-a1c8-4d1c124f5e18-column-240 h-[72px] px-4 py-2 w-60 text-[#4e7097] text-sm font-bold leading-normal tracking-[0.015em]">
+                        <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 flex-1 bg-[#1978e5] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]">
+                          <a class="truncate" href="launch.html">Host</a>
+                        </button>
                       </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
+              <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 flex-1 bg-[#1fd655] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] float-right mt-7">
+                <a class="truncate" href="edit.html">Add</a>
+              </button>
               <style>
                           @container(max-width:120px){.table-a60aacce-b9bd-4103-a1c8-4d1c124f5e18-column-120{display: none;}}
                 @container(max-width:240px){.table-a60aacce-b9bd-4103-a1c8-4d1c124f5e18-column-240{display: none;}}
