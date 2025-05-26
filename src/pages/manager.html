@@ -1,0 +1,103 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Lexend%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"/>
+    <link rel="stylesheet" href="style/style.css">
+    <title>QuizTime</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-slate-50 group/design-root overflow-x-hidden" style='font-family: Lexend, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7edf3] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#0e141b]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path></svg>
+            </div>
+            <h2 class="text-[#0e141b] text-lg font-bold leading-tight tracking-[-0.015em]">QuizMaster</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-[#0e141b] text-sm font-medium leading-normal" href="#">Home</a>
+              <a class="text-[#0e141b] text-sm font-medium leading-normal" href="#">My Quizzes</a>
+              <a class="text-[#0e141b] text-sm font-medium leading-normal" href="#">Explore</a>
+            </div>
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#1978e5] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]"
+            >
+              <span class="truncate">New Quiz</span>
+            </button>
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA6ETsqvnpn0cdxxbTf6CayAJrqTjHeB0yyFU7In3tuX-f0ef0XBTGeK73ExEcA0KlpN1CL2KN7zmva0biC0CVhGa7zy9gaW5RT4ijttAKwATGoQm66oMM_iC5GxEloD0t3hlH6DIU7_uBVsQ5pxYUcQD5L6vF-wvLPamoGEXzOiDeQGWFXdmSMbzrXaiYuAJsKLr5gnnw6Ty7fiR9L45i0Kn_ArM15cX2yBwRGNxNFpPH8i2hQt0llvTwEOZ2dbHcUJlfZSBdABFqd");'
+            ></div>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-[#0e141b] tracking-light text-[32px] font-bold leading-tight min-w-72">My Quizzes</p></div>
+            <div class="px-4 py-3 @container">
+              <div class="flex overflow-hidden rounded-lg border border-[#d0dbe7] bg-slate-50">
+                <table class="flex-1">
+                  <thead>
+                    <tr class="bg-slate-50">
+                      <th class="table-a60aacce-b9bd-4103-a1c8-4d1c124f5e18-column-120 px-4 py-3 text-left text-[#0e141b] w-[400px] text-sm font-medium leading-normal">Title</th>
+                      <th class="table-a60aacce-b9bd-4103-a1c8-4d1c124f5e18-column-240 px-4 py-3 text-left text-[#0e141b] w-60 text-[#4e7097] text-sm font-medium leading-normal">
+                        Actions
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-t border-t-[#d0dbe7]">
+                      <td class="table-a60aacce-b9bd-4103-a1c8-4d1c124f5e18-column-120 h-[72px] px-4 py-2 w-[400px] text-[#0e141b] text-sm font-normal leading-normal">
+                        History Quiz
+                      </td>
+                      <td class="table-a60aacce-b9bd-4103-a1c8-4d1c124f5e18-column-240 h-[72px] px-4 py-2 w-60 text-[#4e7097] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Edit | Delete
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#d0dbe7]">
+                      <td class="table-a60aacce-b9bd-4103-a1c8-4d1c124f5e18-column-120 h-[72px] px-4 py-2 w-[400px] text-[#0e141b] text-sm font-normal leading-normal">
+                        Science Quiz
+                      </td>
+                      <td class="table-a60aacce-b9bd-4103-a1c8-4d1c124f5e18-column-240 h-[72px] px-4 py-2 w-60 text-[#4e7097] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Edit | Delete
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#d0dbe7]">
+                      <td class="table-a60aacce-b9bd-4103-a1c8-4d1c124f5e18-column-120 h-[72px] px-4 py-2 w-[400px] text-[#0e141b] text-sm font-normal leading-normal">
+                        Math Quiz
+                      </td>
+                      <td class="table-a60aacce-b9bd-4103-a1c8-4d1c124f5e18-column-240 h-[72px] px-4 py-2 w-60 text-[#4e7097] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Edit | Delete
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#d0dbe7]">
+                      <td class="table-a60aacce-b9bd-4103-a1c8-4d1c124f5e18-column-120 h-[72px] px-4 py-2 w-[400px] text-[#0e141b] text-sm font-normal leading-normal">
+                        Geography Quiz
+                      </td>
+                      <td class="table-a60aacce-b9bd-4103-a1c8-4d1c124f5e18-column-240 h-[72px] px-4 py-2 w-60 text-[#4e7097] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Edit | Delete
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#d0dbe7]">
+                      <td class="table-a60aacce-b9bd-4103-a1c8-4d1c124f5e18-column-120 h-[72px] px-4 py-2 w-[400px] text-[#0e141b] text-sm font-normal leading-normal">
+                        Literature Quiz
+                      </td>
+                      <td class="table-a60aacce-b9bd-4103-a1c8-4d1c124f5e18-column-240 h-[72px] px-4 py-2 w-60 text-[#4e7097] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Edit | Delete
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <style>
+                          @container(max-width:120px){.table-a60aacce-b9bd-4103-a1c8-4d1c124f5e18-column-120{display: none;}}
+                @container(max-width:240px){.table-a60aacce-b9bd-4103-a1c8-4d1c124f5e18-column-240{display: none;}}
+              </style>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
