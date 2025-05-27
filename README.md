@@ -1,90 +1,83 @@
-QuizTime
+# QuizTime
+
 QuizTime is a web-based quiz application designed for creating, taking, and managing quizzes. Built with TypeScript, HTML, and SQL, it offers a user-friendly interface for both administrators and participants.
-GitHub
 
-Features
-Quiz Creation: Administrators can create and manage quizzes with multiple questions.
+## Features
 
-User Authentication: Secure login system for users.
+- Quiz Creation: Administrators can create and manage quizzes with multiple questions.
+- User Authentication: Secure login system for users.
+- Responsive Design: Optimized for both desktop and mobile devices.
+- Real-time Results: Instant feedback and results after quiz submission.
 
-Responsive Design: Optimized for both desktop and mobile devices.
+## Technologies Used
 
-Real-time Results: Instant feedback and results after quiz submission.
-GitHub
+- **Frontend:** HTML, TypeScript
+- **Backend:** SQL for database management
+- **Build Tools:** Vite for bundling and development server
 
-Technologies Used
-Frontend: HTML, TypeScript
+## Getting Started
 
-Backend: SQL for database management
+### Prerequisites
 
-Build Tools: Vite for bundling and development server
+- Node.js and npm installed on your machine.
+- A SQL database set up for storing quiz data.
 
-Getting Started
-Prerequisites
-Node.js and npm installed on your machine.
+### Installation
 
-A SQL database set up for storing quiz data.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/BalintoDaB/QuizTime.git
+   ```
+2. Navigate into the project directory:
 
-Installation
-Clone the repository:
-GitHub
-
-bash
-Másolás
-Szerkesztés
-git clone https://github.com/BalintoDaB/QuizTime.git
-Navigate into the project directory:
-
-bash
-Másolás
-Szerkesztés
+```bash
 cd QuizTime
-Install the required dependencies:
-GitHub
-+1
-GitHub
-+1
+```
 
-bash
-Másolás
-Szerkesztés
+3. Install the required dependencies:
+
+```bash
 npm install
-Set up your SQL database and configure the connection in the project settings.
+```
 
-Run the development server:
-GitHub
+4. Set up your SQL database and configure the connection in the project settings.
 
-bash
-Másolás
-Szerkesztés
+5. Run the development server:
+
+```bash
 npm run dev
-Access the application at http://localhost:3000 in your web browser.
+```
 
-Usage
-For Administrators:
+6. Access the application at http://localhost:3000 in your web browser.
 
-Log in to create and manage quizzes.
+## Usage
 
-Monitor quiz statistics and user performance.
-Gist
-+5
-GitHub
-+5
-GitHub
-+5
+### For Administrators
 
-For Participants:
+- Log in to the application using your admin credentials.
+- Create new quizzes by adding questions and possible answers.
+- Manage existing quizzes by editing or deleting them.
+- Monitor user participation and quiz results through the admin dashboard.
 
-Browse available quizzes and select one to take.
+### For Participants
 
-Submit answers and view results instantly.
-GitHub
-GitHub
+- Browse and select from the list of available quizzes.
+- Answer the quiz questions within the allotted time.
+- Submit your answers to receive immediate feedback and results.
 
-Contributing
-Contributions are welcome! Please fork the repository, create a new branch for your feature or bug fix, and submit a pull request.
+## Contributing
 
-License
-This project is licensed under the MIT License.
+We welcome contributions to improve QuizTime! To contribute:
 
-Feel free to customize this README further based on additional features or specific instructions related to your project.
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix (`git checkout -b feature-name`).
+3. Commit your changes (`git commit -m "Add feature"`).
+4. Push to your branch (`git push origin feature-name`).
+5. Open a pull request on the original repository.
+
+Please make sure your code follows the existing style and includes relevant tests if applicable.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+   
