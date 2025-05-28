@@ -23,4 +23,17 @@ export default class API {
         // }
         return response.json();
     }
+
+    static async delete<T>(url: string): Promise<T> {
+        const response = await fetch(this.baseUrl+url, {
+            method: 'DELETE',
+        });
+        if (!response.ok) {
+            //return response.json();
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+    }
+
+    
 }
