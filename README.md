@@ -21,6 +21,7 @@ QuizTime is a web-based quiz application designed for creating, taking, and mana
 
 - Node.js and npm installed on your machine.
 - A SQL database set up for storing quiz data.
+- <a href="https://github.com/BalintoDaB/QuizTimeServer">QuizTime Server</a>
 
 ### Installation
 
@@ -48,7 +49,7 @@ npm install
 npm run dev
 ```
 
-6. Access the application at http://localhost:3000 in your web browser.
+6. Access the application at http://localhost:{what-vite-shows} in your web browser.
 
 ## Usage
 
