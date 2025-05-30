@@ -11,7 +11,7 @@ async function init(){
         renderQuiz(element.id, element.title);
     });
 }
-function renderQuiz(id:Number, title:string){
+export function renderQuiz(id:Number, title:string){
     let tr = document.createElement('tr');
     tr.className = 'border-t border-t-[#d0dbe7]';
     tr.innerHTML = `

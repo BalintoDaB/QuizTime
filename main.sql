@@ -60,6 +60,7 @@ CREATE TABLE `quiztime`.`hosted_servers` (
     `id` INT NOT NULL AUTO_INCREMENT,
     `hostId` INT NOT NULL,               -- references users.id
     `hostedQuizId` INT NOT NULL,         -- references quizzes.id
+    `joinedUserIds` TEXT,            -- JSON array of user IDs who joined
     `ip_address` VARCHAR(45) NOT NULL,   -- supports IPv4 and IPv6
     `port` INT NOT NULL DEFAULT 8080,    -- useful if multiple hosts run on same IP
     `status` ENUM('active', 'ended') DEFAULT 'active',
