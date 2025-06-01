@@ -19,5 +19,5 @@ socket.onopen = () => {
 socket.onmessage = (event) => {
     const data = JSON.parse(event.data);
     serverId = data.serverId;
-    window.location.href = `lobby.html?mode=host&serverId=${serverId}`;
+    window.location.href = `lobby.html?mode=hostJoin&serverId=${serverId}`;
 }

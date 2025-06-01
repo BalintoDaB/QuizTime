@@ -37,23 +37,9 @@
         </header>
         <div class="px-40 flex flex-1 justify-center py-5">
           <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <h2 class="text-[#101418] tracking-light text-[28px] font-bold leading-tight px-4 text-center pb-3 pt-5">Question 1/10</h2>
-            <p class="text-[#101418] text-base font-normal leading-normal pb-3 pt-1 px-4 text-center">What is the capital of France?</p>
-            <div class="flex gap-4 py-6 px-4">
-              <div class="flex grow basis-0 flex-col items-stretch gap-4">
-                <div class="flex h-14 grow items-center justify-center rounded-xl px-3 bg-[#eaedf1]">
-                  <p class="text-[#101418] text-lg font-bold leading-tight tracking-[-0.015em]">00</p>
-                </div>
-                <div class="flex items-center justify-center"><p class="text-[#101418] text-sm font-normal leading-normal">Minutes</p></div>
-              </div>
-              <div class="flex grow basis-0 flex-col items-stretch gap-4">
-                <div class="flex h-14 grow items-center justify-center rounded-xl px-3 bg-[#eaedf1]">
-                  <p class="text-[#101418] text-lg font-bold leading-tight tracking-[-0.015em]">15</p>
-                </div>
-                <div class="flex items-center justify-center"><p class="text-[#101418] text-sm font-normal leading-normal">Seconds</p></div>
-              </div>
-            </div>
-            <div class="flex flex-col gap-3 p-4">
+            <h2 class="text-[#101418] tracking-light text-[28px] font-bold leading-tight px-4 text-center pb-3 pt-5">Question <span id="current-question"></span>/<span id="all-questions"></span></h2>
+            <p class="text-[#101418] text-base font-normal leading-normal pb-3 pt-1 px-4 text-center" id="question-title">What is the capital of France?</p>
+            <div class="flex flex-col gap-3 p-4" id="question-list">
               <label class="flex items-center gap-4 rounded-xl border border-solid border-[#d4dbe2] p-[15px]">
                 <input
                   type="radio"
@@ -88,31 +74,17 @@
                 <div class="flex grow flex-col"><p class="text-[#101418] text-sm font-medium leading-normal">Rome</p></div>
               </label>
             </div>
-            <div class="flex justify-stretch">
-              <div class="flex flex-1 gap-3 flex-wrap px-4 py-3 justify-between">
-                <button
-                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#eaedf1] text-[#101418] text-sm font-bold leading-normal tracking-[0.015em]"
-                >
-                  <a class="truncate">Stop Timer</a>
-                </button>
-                <button
-                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#b2cae5] text-[#101418] text-sm font-bold leading-normal tracking-[0.015em]"
-                >
-                  <a class="truncate">Reveal Answer</a>
-                </button>
-              </div>
-            </div>
             <div class="flex px-4 py-3 justify-center">
-              <button
+              <button id="next-btn"
                 class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#b2cae5] text-[#101418] text-sm font-bold leading-normal tracking-[0.015em]"
               >
                 <a class="truncate">Next Question</a>
               </button>
             </div>
-            <p class="text-[#5c718a] text-sm font-normal leading-normal pb-3 pt-1 px-4 text-center">15/20 participants answered</p>
           </div>
         </div>
       </div>
     </div>
+    <script type="module" src="../ts/quizHost.ts"></script>
   </body>
 </html>

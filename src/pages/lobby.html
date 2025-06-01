@@ -7,7 +7,7 @@
   </head>
   <body>
     <div class="relative flex size-full min-h-screen flex-col bg-slate-50 group/design-root overflow-x-hidden" style='font-family: Lexend, "Noto Sans", sans-serif;'>
-      <div class="layout-container flex h-full grow flex-col">
+      <div id="button-cont" class="layout-container flex h-full grow flex-col">
         <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7edf3] px-10 py-3">
           <div class="flex items-center gap-4 text-[#0e141b]">
             <div class="size-4">
@@ -36,56 +36,19 @@
           <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
             <div class="flex flex-wrap justify-between gap-3 p-4">
               <div class="flex min-w-72 flex-col gap-3">
-                <p class="text-[#0e141b] tracking-light text-[32px] font-bold leading-tight">Quiz: History of Ancient Rome</p>
-                <p class="text-[#4e7097] text-sm font-normal leading-normal">Hosted by: Dr. Eleanor Vance</p>
+                <p id="title" class="text-[#0e141b] tracking-light text-[32px] font-bold leading-tight"></p>
+                <p id="host-name" class="text-[#4e7097] text-sm font-normal leading-normal"></p>
               </div>
             </div>
             <h3 class="text-[#0e141b] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Players in Lobby</h3>
-            <div class="flex items-center gap-4 bg-slate-50 px-4 min-h-14">
-              <div
-                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-10 w-fit"
-                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB9fmrZtLRZc-L3dX_3n5du_Ma4MEx0mD3P4T2PHRuzcdxhMqGoSaiqkPFdIkZFFvB6Qx9e-AcKQDE6btAbPzdzSCQ-f8A-GrXwBIinc9ndqWKGdPFTJsQy3jIsEYvIZCO4jgUsgd8XAJLPLO4vy9hzLYxc6F1-3hJtbc41Ctq9HMfWeP3mPi9QbJBvovIjwi3LEFU98EesnDHYKhnWhrfQ2fv4sv5MXuEyOKJlGrqhvb9o44-FcQsQFieKAmhNXqq5IDUi0lP-4cTh");'
-              ></div>
-              <p class="text-[#0e141b] text-base font-normal leading-normal flex-1 truncate">Liam Harper</p>
-            </div>
-            <div class="flex items-center gap-4 bg-slate-50 px-4 min-h-14">
-              <div
-                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-10 w-fit"
-                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAG7JgQK-H97C8W0mDxknZMfcwVTqX7bTvdM6jH9LxqzGBQUZE3fp864dezI1tFoXkFZVXiyt0ebTkH46Oukqdpm2rzxOfuW9VuiQrAke_HpVUyCioVF4Z6XcerqnGpEi3Iw_S-oY403kzWm02p1UELlSOaNA3LCesKcFmP-K-U0eRZ0NawPGlLWetYM6ug4TcwcMSnx8mZrxUEzW1SIcLayXRDvADT7-sh5o5B2YbOsOq4yPGysZlQo7dyted0Wo8887LEl6mmoyeZ");'
-              ></div>
-              <p class="text-[#0e141b] text-base font-normal leading-normal flex-1 truncate">Sophia Bennett</p>
-            </div>
-            <div class="flex items-center gap-4 bg-slate-50 px-4 min-h-14">
-              <div
-                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-10 w-fit"
-                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBYoTFUcJZA6eMxCODay6jU3EYfgLP_TKj6ekKEMJRIp0EuaLLqFu3tUGm-NcSB3s0T2-wS1JEEDbLDLnap_w4x6YX098wUNvt0ZL8qwDZMApGHeyF6Im-gIcyO4byvsQ9UFy7wa5Q96Y9ouvoUr8fM-7hKgelz-L-_rV8UIG62EtmYuxjehKikP2PjM9xexX4w24oYpZH5B3FzPG_kpfSRHmMgFvYEo5oHTz88LRz5eRTNDwarzXUjocfH8v6MtY8p8Le25mQAz3PH");'
-              ></div>
-              <p class="text-[#0e141b] text-base font-normal leading-normal flex-1 truncate">Ethan Carter</p>
-            </div>
-            <div class="flex items-center gap-4 bg-slate-50 px-4 min-h-14">
-              <div
-                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-10 w-fit"
-                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCHjjDWKE1qEyip7Sd27pwApFbKzLxHi9D0cNT3eIIzXjYy7x3st-m9kRFc--e4LjjCaFoihKqgPcuojU9zV3MnYM3SCQC7zjVNvU1bZhZ3C3qmUxKwDXy9Y7AYmIUoo-A2YfZKl9eoBSRZV_nmrkTiINsapGBegT8JEqe3WXLePXNJv4I8ynH0Gr5GqLrev2lGW_gAu2YQZ_viPjuDqBYEoJRR2NqQ0dRG-IJBeMGxGCydSM4X4084m_UI7fHY9YICE4nptPgMxjEI");'
-              ></div>
-              <p class="text-[#0e141b] text-base font-normal leading-normal flex-1 truncate">Olivia Davis</p>
-            </div>
-            <div class="flex items-center gap-4 bg-slate-50 px-4 min-h-14">
-              <div
-                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-10 w-fit"
-                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBRSVR25R2qGDTnWM50U_fPYq68n8aayq2f4kuc9KgzMQ6lzCvYFzD17IPkZqBZe5msXi36Zy628aKCDMUD92lbmmviQvnkd3lUsAZMzbyiMdIS7hVEe_Nj-ZN_mrJCvNN-Z-Iu90XtaFd55LT6HuDWWXj2p0BTFv00SKRmHsgOGYfuuGX08m9jU83TPc8B2FRIy39uptjvOW5KNFyuduPa-lGT97AtSSuuQ7TGH0E7FslybEU0ZLfk5f12M77M7JoTb9UDx2-QV7CZ");'
-              ></div>
-              <p class="text-[#0e141b] text-base font-normal leading-normal flex-1 truncate">Noah Foster</p>
-            </div>
-            <div class="flex px-4 py-3 justify-end">
-              <button
-                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 bg-[#1978e5] text-slate-50 text-base font-bold leading-normal tracking-[0.015em]"
-              >
-                <a class="truncate">Start Quiz</a>
-              </button>
+            <div id="player-list">
+
             </div>
           </div>
         </div>
+
       </div>
     </div>
+    <script type="module" src="../ts/lobby.ts"></script>
   </body>
 </html>
